@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event | Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom Css-->
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <header>
+        <section class="cantiner1">
+            <nav class="d-felex justify-between">
+                <img class="logo" src="./images/logo.png_11zon.jpg">
+                <div class="menu-box">
+                    <label for="burger">
+                        <i class=" bx bx-menu"> MENU</i>
+                    </label>
+                    <input class="checkbox" type="checkbox" id="burger">
+                    <ul class="d-felex">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="./speakers.html">SPEAKERS</a></li>
+                        <li><a href="">SCHEDULE</a></li>
+                        <li><a href="">LOCATION</a></li>
+                        <li class="blog-menu"><a>BLOG </a>
+                            <ol>
+                                <li>Blog</li>
+                                <li>Blog Details</li>
+                                <li>Elements</li>
+                            </ol>
+                        </li>
+                        <li><a>CANTACT</a></li>
+                        <button class="confirm-hedear">COFIRM YOUR SEAT ➔</button>
+                    </ul>
+                </div>
+            </nav>
+            <section class="sandiego">
+                <h1> <span>SANDIEGO</span> DESIGN WEEK</h1>
+            </section>
+            <div class="video-icon">
+                <img
+                    src="data:image/png;base64,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" />
+            </div>
+            <section class="Conference-date-and-ticket-purchase">
+                <h4>12 AUG 2021</h4>
+                <P class="conference-location">3968 CARSON STREET,SAN DIEGO,CA92101</P>
+                <button class="buy-ticket"> BUY TICKET</button>
+            </section>
+        </section>
+    </header>
+    <main class="cantiner1">
+        <section class="hedear-bottom">
+            <div class="left-box">
+                <h2> ABOUT DESIGN WEEK</h2>
+                <button class="confirm-button">COFIRM YOUR SEAT ➔</button>
+            </div>
+            <div class="right-box">
+                <p class="paragraf-rightbox-hedearbottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Commodi, vel omnis repellendus mollitia, explicabo, maiores quisquam numquam quia reiciendis sit,
+                    accusantium atque ex animi perspiciatis ab odit earum assumenda aliquid.</p>
+                <p class="paragraf-rightbox-hedearbottom">Dolor sit amet, consectetur adipisicing elit. Commodi, vel
+                    omnis repellendus mollitia, explicabo, maiores quisquam numquam quia reiciendis sit, accusantium
+                    atque ex animi perspiciatis ab odit earum assumenda aliquid.</p>
+                <section class="box-bottom-paragraf-rightbox">
+                    <div>
+                        <span>03</span>
+                        <p>DAY EVENT</p>
+                    </div>
+                    <div>
+                        <span>10+</span>
+                        <p>DAY EVENT</p>
+                    </div>
+                    <div>
+                        <span>23+</span>
+                        <p>SPONSORS</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="speakers">
+            <div class="titel-and-button">
+                <h3> SPEAKERS</h3>
+                <button class="speakers-of-button"> VIEW ALL SPEAKERS</button>
+            </div>
+            <div class="speakers-picture">
+                <figure>
+                    <div class="box-speakers-person">
+                        <img class="speakers-person" src="./images/e07a5c53-99c6-42e2-a4ab-21578c70f57e.jpg">
+                        <div class="box-icon">
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArpJREFUWEftl09u00AUxr83CQvYEE7QdhkHCTc5AOEG5QRtT9CwRLFFKgexJNwgPUG5AeEAMa5E0yXhBskGWGA/NFET7HgmM7a7qBCzzIzf/OZ7f0O4Z4vuGQ/+DaCv7ltXCD4GwWWgQYArlWYgImABRpQkdPE06kdFPWCt0Dd30PglHpwlSHpE1LC5iJkXAmLUDPvnNuflGSugWSc4AtN7EPZtDWfOMeYgfuVM/Y+m741As3YwAtGZyZDNPjENTGrtBJp1hmMAxzaX2Z5hxrgVeqe681qgKsow8xURPdNdysznrdAfqPaVQKuYAV3avhrAkplHIqmPm9Hrefo7vS1+qYqpHJDMpp+i/qVAAC+TmLq6FL9xgy7X6FPucYy5E3oH27/ngK7bwYCI3tiqQ0ynzbAvY025tECybilclwOadYYLAI9tgZypp3T7jftuH8R7LGIXoJHKnqxTrdB/kt7LGNv1GiUg82cn9LvpPQmS1OLLdfU2PSyJ6TDt7gxQ4cxSABV1OZg/OKHfW4NvA01A9Nz0qs2+AmjWDirZyABdt4NoV/3IZ0reZUWBZENuTb1DtUKdIVurIw/ehUIA0omRdZkJSAFgeoBNXOqB2sM5CHvaS8oB7Ywp2WZaob+ap+QqFtSlgIo9sljalwEyh4E+7U2FUVZWIvo7ljJfpWuIlPw2ZladPj3e6sKAYn7RjPyJ0mUrg0VaR/UsWzpTLzMOV2uuFYGsmutq/KjV5UxjbrDVgJYP49/7B9FANvPNqjagVQKyHNDWqDYFrXSl3mqoRoU2UKYhv5xCF87UO9FmXaXSXxRohzLatFcB3tYn+ScvG+j2QEuK+Shdb0ortP5QZt8PUesR6GTT70xAjO8MHj9K4tF2NlUGShuQiiUCXQIaqkrNwEIkmNgosg1m/CttirG73v8PZFL0D6twnDSmY6VBAAAAAElFTkSuQmCC" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAApFJREFUWEftl0FuGkEQRf+fSRZ4g28QssSOZAwHCDmBuUHwCSDLyFiZCKwsY98AnyDkBOECoIkUwxJyA7xIsmG6osYaG0EP3U2syAvYdlX1m6pfVQ3xxH58YjzYAdkqssvQf8/Qj9JFiYE0SBQAVAWIKehThVfF+P00BZqUov1feF54FZ/Fy5BrJRuXPhUQqGpxeNa1fc3q+ajcaYL4nOVH4SmUmkrAE4HUA/XseBlS+60BpUG1sw/UqNKuAfzi/BGCdwfD1uWqvQGo3Qf5ekHrCKXT/zsIJyT3XYBE0A3AqaIc7yXz+ss4mqV+a0A3lU6PwMlDYOnlkuR02WmtVL7ZuQtwqxJWrRoy6UBEZgHZLA5a16YM3JTbEckPLtnRNiLyXVRQX4Uxamhcalcl5DdTcA0GsCeKV8vBRuX2JciGB9DHw+F5ZLI3DsZRpaM77K3tgkVLA2n9qzb7+/MMQZu7rNKu5ZKk/ycIe6m4nS9yNGQib4rxed8pQ6modXlcu8aR497MD8hToL4w2v5g0MrcocZJLWEy2eYiFx8Bvh4OWrXMaf4YbewC4iJoo6hTx3H5oi6QCMQLrws3G9/mknlh05DNrKWeRwrMI0REoPQYUCKSOX/S+BuBsgbklnDW7GwsmT50HZAugK6L2vqEHZUftr/LxcaVY+msZR8rkDZe6CmAXg01kkc+YHqR7qmkuknI3kDaQW90AA2f6e0LY9WQfh+HoRyJQLe/fiP7/K5zybzpmhljly2eHgEiIfNbt7rgJ5XUs5an7YvMqyOYN0HWAeRtAdJzXR6CXdM72TWGtWSpmImFoJE+R+4uxwzkFIKYKuyt/nvwgdhK1Nte4Ovn1Pa+Qf/Ffgdky94uQ7YM/QV4dh004hVvIwAAAABJRU5ErkJggg==" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA0tJREFUWEfdWE1O20AU/p6dTValJygs41SqSQ5QbtByAuAEpMsKRw1KUJeEEzQ5QXODpgeIcaUSloQTNGzoBvtV48TBHo/tsWkl1NnOm/e++d7vDOGZLXpmePB/APppn9mGwQcg2AxsEWALphnwCFiC4QUBjV97J15ZD5Ri6KrV7wE4JqItHUPMvDRgDBvuyamOvJDRAjRv99+D6RyEbV3FCTnGAsQfrFl3UnS+EJBghYg+FSnS2SemXhFbuYDm7cEIwIGOMVmGmU8NGAsG90B4Fe0zY9R0naMsnZmAns4M7wsX3di9rXuzNiLg3SMoPm26XRGPqaUEFMYM6GsVZsJsY/7RdLth5kUrzfYKsGxDDag1WMRp1gEmXCTkhJsa7olwdWpdtQeTDVOMheU6O4WAqrrKmjmFCSLc99uoedFlxSVk16WUzNuDJYAXOqzEZO6smaNVm65bZ4dM/GXt2mXT7b6M20oACiuwyZclwQjxsTVzDnXPzWMhEfi0G6/oCUDzVn8IouO14jEz20T0psDQuO4/dHa8nmBWayXsMF9YbrcTHZQBTUH0drXJ+3Xfn94b5jQLlE7cqBAmspj5u+V295SArlp9LzJOvrnT8D4uwjqSAaoqoGv78zab/k14bcBrzpxdNUPtAUcbcWNZoKoCEjbmGbaSLssQEgpUoKoCCtPfrP1SXT4BSOWyeAzIikSzzIziwBgLl6v2r+3+Hpv0bZ36iaqeG9Sq0h6nujil1O1h3hp0QDhf5U5OUOelY2S8DCA5YDc64uUlL+0ThTGj18TdWswQIMfZOhZvoqkztzCuo3/TOojpSG6UeWVABVAGJPXKVMtJ9bLEAcaiHjzsylW4LCiAJ+TjAqgtAuPhMmJHq7mGLCXGD55Ys+6+fPvyoMI5abl5IDBuLddJzehaA1rW2FkF1OPFSgxo4lB6LuJJ3fePZPdVmZ9UrlK2Dtkt8tgZvrOIOo2ZM45kKwDKHVUKpzyVwTAWQCMOMCUTIr60XiZ5zGgx9FgMw4fisOycvWGccQvizl95KMbduGZLDFO6I+4dMw+znjyqulXoMtWh1WdDIEbW1WfDeqoUz5/wswHis8EY/fPPBp1W8VSZSgw91Wje+WcH6A+tkMU0qNk3ygAAAABJRU5ErkJggg==" />
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h5>Frank Senbeans</h5>
+                        product Designer <span> @colorlib</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="box-speakers-person">
+                        <img class="speakers-person" src="./images/c043a7a7-f064-481f-830c-99723374fd50.jpg">
+                        <div class="box-icon">
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArpJREFUWEftl09u00AUxr83CQvYEE7QdhkHCTc5AOEG5QRtT9CwRLFFKgexJNwgPUG5AeEAMa5E0yXhBskGWGA/NFET7HgmM7a7qBCzzIzf/OZ7f0O4Z4vuGQ/+DaCv7ltXCD4GwWWgQYArlWYgImABRpQkdPE06kdFPWCt0Dd30PglHpwlSHpE1LC5iJkXAmLUDPvnNuflGSugWSc4AtN7EPZtDWfOMeYgfuVM/Y+m741As3YwAtGZyZDNPjENTGrtBJp1hmMAxzaX2Z5hxrgVeqe681qgKsow8xURPdNdysznrdAfqPaVQKuYAV3avhrAkplHIqmPm9Hrefo7vS1+qYqpHJDMpp+i/qVAAC+TmLq6FL9xgy7X6FPucYy5E3oH27/ngK7bwYCI3tiqQ0ynzbAvY025tECybilclwOadYYLAI9tgZypp3T7jftuH8R7LGIXoJHKnqxTrdB/kt7LGNv1GiUg82cn9LvpPQmS1OLLdfU2PSyJ6TDt7gxQ4cxSABV1OZg/OKHfW4NvA01A9Nz0qs2+AmjWDirZyABdt4NoV/3IZ0reZUWBZENuTb1DtUKdIVurIw/ehUIA0omRdZkJSAFgeoBNXOqB2sM5CHvaS8oB7Ywp2WZaob+ap+QqFtSlgIo9sljalwEyh4E+7U2FUVZWIvo7ljJfpWuIlPw2ZladPj3e6sKAYn7RjPyJ0mUrg0VaR/UsWzpTLzMOV2uuFYGsmutq/KjV5UxjbrDVgJYP49/7B9FANvPNqjagVQKyHNDWqDYFrXSl3mqoRoU2UKYhv5xCF87UO9FmXaXSXxRohzLatFcB3tYn+ScvG+j2QEuK+Shdb0ortP5QZt8PUesR6GTT70xAjO8MHj9K4tF2NlUGShuQiiUCXQIaqkrNwEIkmNgosg1m/CttirG73v8PZFL0D6twnDSmY6VBAAAAAElFTkSuQmCC" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAApFJREFUWEftl0FuGkEQRf+fSRZ4g28QssSOZAwHCDmBuUHwCSDLyFiZCKwsY98AnyDkBOECoIkUwxJyA7xIsmG6osYaG0EP3U2syAvYdlX1m6pfVQ3xxH58YjzYAdkqssvQf8/Qj9JFiYE0SBQAVAWIKehThVfF+P00BZqUov1feF54FZ/Fy5BrJRuXPhUQqGpxeNa1fc3q+ajcaYL4nOVH4SmUmkrAE4HUA/XseBlS+60BpUG1sw/UqNKuAfzi/BGCdwfD1uWqvQGo3Qf5ekHrCKXT/zsIJyT3XYBE0A3AqaIc7yXz+ss4mqV+a0A3lU6PwMlDYOnlkuR02WmtVL7ZuQtwqxJWrRoy6UBEZgHZLA5a16YM3JTbEckPLtnRNiLyXVRQX4Uxamhcalcl5DdTcA0GsCeKV8vBRuX2JciGB9DHw+F5ZLI3DsZRpaM77K3tgkVLA2n9qzb7+/MMQZu7rNKu5ZKk/ycIe6m4nS9yNGQib4rxed8pQ6modXlcu8aR497MD8hToL4w2v5g0MrcocZJLWEy2eYiFx8Bvh4OWrXMaf4YbewC4iJoo6hTx3H5oi6QCMQLrws3G9/mknlh05DNrKWeRwrMI0REoPQYUCKSOX/S+BuBsgbklnDW7GwsmT50HZAugK6L2vqEHZUftr/LxcaVY+msZR8rkDZe6CmAXg01kkc+YHqR7qmkuknI3kDaQW90AA2f6e0LY9WQfh+HoRyJQLe/fiP7/K5zybzpmhljly2eHgEiIfNbt7rgJ5XUs5an7YvMqyOYN0HWAeRtAdJzXR6CXdM72TWGtWSpmImFoJE+R+4uxwzkFIKYKuyt/nvwgdhK1Nte4Ovn1Pa+Qf/Ffgdky94uQ7YM/QV4dh004hVvIwAAAABJRU5ErkJggg==" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA0tJREFUWEfdWE1O20AU/p6dTValJygs41SqSQ5QbtByAuAEpMsKRw1KUJeEEzQ5QXODpgeIcaUSloQTNGzoBvtV48TBHo/tsWkl1NnOm/e++d7vDOGZLXpmePB/APppn9mGwQcg2AxsEWALphnwCFiC4QUBjV97J15ZD5Ri6KrV7wE4JqItHUPMvDRgDBvuyamOvJDRAjRv99+D6RyEbV3FCTnGAsQfrFl3UnS+EJBghYg+FSnS2SemXhFbuYDm7cEIwIGOMVmGmU8NGAsG90B4Fe0zY9R0naMsnZmAns4M7wsX3di9rXuzNiLg3SMoPm26XRGPqaUEFMYM6GsVZsJsY/7RdLth5kUrzfYKsGxDDag1WMRp1gEmXCTkhJsa7olwdWpdtQeTDVOMheU6O4WAqrrKmjmFCSLc99uoedFlxSVk16WUzNuDJYAXOqzEZO6smaNVm65bZ4dM/GXt2mXT7b6M20oACiuwyZclwQjxsTVzDnXPzWMhEfi0G6/oCUDzVn8IouO14jEz20T0psDQuO4/dHa8nmBWayXsMF9YbrcTHZQBTUH0drXJ+3Xfn94b5jQLlE7cqBAmspj5u+V295SArlp9LzJOvrnT8D4uwjqSAaoqoGv78zab/k14bcBrzpxdNUPtAUcbcWNZoKoCEjbmGbaSLssQEgpUoKoCCtPfrP1SXT4BSOWyeAzIikSzzIziwBgLl6v2r+3+Hpv0bZ36iaqeG9Sq0h6nujil1O1h3hp0QDhf5U5OUOelY2S8DCA5YDc64uUlL+0ThTGj18TdWswQIMfZOhZvoqkztzCuo3/TOojpSG6UeWVABVAGJPXKVMtJ9bLEAcaiHjzsylW4LCiAJ+TjAqgtAuPhMmJHq7mGLCXGD55Ys+6+fPvyoMI5abl5IDBuLddJzehaA1rW2FkF1OPFSgxo4lB6LuJJ3fePZPdVmZ9UrlK2Dtkt8tgZvrOIOo2ZM45kKwDKHVUKpzyVwTAWQCMOMCUTIr60XiZ5zGgx9FgMw4fisOycvWGccQvizl95KMbduGZLDFO6I+4dMw+znjyqulXoMtWh1WdDIEbW1WfDeqoUz5/wswHis8EY/fPPBp1W8VSZSgw91Wje+WcH6A+tkMU0qNk3ygAAAABJRU5ErkJggg==" />
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h5>Morcus Down</h5>
+                        product Designer <span> @colorlib</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="box-speakers-person">
+                        <img class="speakers-person" src="./images/4617220f-2d6e-4667-bc19-de2117aeced6.jpg">
+                        <div class="box-icon">
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArpJREFUWEftl09u00AUxr83CQvYEE7QdhkHCTc5AOEG5QRtT9CwRLFFKgexJNwgPUG5AeEAMa5E0yXhBskGWGA/NFET7HgmM7a7qBCzzIzf/OZ7f0O4Z4vuGQ/+DaCv7ltXCD4GwWWgQYArlWYgImABRpQkdPE06kdFPWCt0Dd30PglHpwlSHpE1LC5iJkXAmLUDPvnNuflGSugWSc4AtN7EPZtDWfOMeYgfuVM/Y+m741As3YwAtGZyZDNPjENTGrtBJp1hmMAxzaX2Z5hxrgVeqe681qgKsow8xURPdNdysznrdAfqPaVQKuYAV3avhrAkplHIqmPm9Hrefo7vS1+qYqpHJDMpp+i/qVAAC+TmLq6FL9xgy7X6FPucYy5E3oH27/ngK7bwYCI3tiqQ0ynzbAvY025tECybilclwOadYYLAI9tgZypp3T7jftuH8R7LGIXoJHKnqxTrdB/kt7LGNv1GiUg82cn9LvpPQmS1OLLdfU2PSyJ6TDt7gxQ4cxSABV1OZg/OKHfW4NvA01A9Nz0qs2+AmjWDirZyABdt4NoV/3IZ0reZUWBZENuTb1DtUKdIVurIw/ehUIA0omRdZkJSAFgeoBNXOqB2sM5CHvaS8oB7Ywp2WZaob+ap+QqFtSlgIo9sljalwEyh4E+7U2FUVZWIvo7ljJfpWuIlPw2ZladPj3e6sKAYn7RjPyJ0mUrg0VaR/UsWzpTLzMOV2uuFYGsmutq/KjV5UxjbrDVgJYP49/7B9FANvPNqjagVQKyHNDWqDYFrXSl3mqoRoU2UKYhv5xCF87UO9FmXaXSXxRohzLatFcB3tYn+ScvG+j2QEuK+Shdb0ortP5QZt8PUesR6GTT70xAjO8MHj9K4tF2NlUGShuQiiUCXQIaqkrNwEIkmNgosg1m/CttirG73v8PZFL0D6twnDSmY6VBAAAAAElFTkSuQmCC" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAApFJREFUWEftl0FuGkEQRf+fSRZ4g28QssSOZAwHCDmBuUHwCSDLyFiZCKwsY98AnyDkBOECoIkUwxJyA7xIsmG6osYaG0EP3U2syAvYdlX1m6pfVQ3xxH58YjzYAdkqssvQf8/Qj9JFiYE0SBQAVAWIKehThVfF+P00BZqUov1feF54FZ/Fy5BrJRuXPhUQqGpxeNa1fc3q+ajcaYL4nOVH4SmUmkrAE4HUA/XseBlS+60BpUG1sw/UqNKuAfzi/BGCdwfD1uWqvQGo3Qf5ekHrCKXT/zsIJyT3XYBE0A3AqaIc7yXz+ss4mqV+a0A3lU6PwMlDYOnlkuR02WmtVL7ZuQtwqxJWrRoy6UBEZgHZLA5a16YM3JTbEckPLtnRNiLyXVRQX4Uxamhcalcl5DdTcA0GsCeKV8vBRuX2JciGB9DHw+F5ZLI3DsZRpaM77K3tgkVLA2n9qzb7+/MMQZu7rNKu5ZKk/ycIe6m4nS9yNGQib4rxed8pQ6modXlcu8aR497MD8hToL4w2v5g0MrcocZJLWEy2eYiFx8Bvh4OWrXMaf4YbewC4iJoo6hTx3H5oi6QCMQLrws3G9/mknlh05DNrKWeRwrMI0REoPQYUCKSOX/S+BuBsgbklnDW7GwsmT50HZAugK6L2vqEHZUftr/LxcaVY+msZR8rkDZe6CmAXg01kkc+YHqR7qmkuknI3kDaQW90AA2f6e0LY9WQfh+HoRyJQLe/fiP7/K5zybzpmhljly2eHgEiIfNbt7rgJ5XUs5an7YvMqyOYN0HWAeRtAdJzXR6CXdM72TWGtWSpmImFoJE+R+4uxwzkFIKYKuyt/nvwgdhK1Nte4Ovn1Pa+Qf/Ffgdky94uQ7YM/QV4dh004hVvIwAAAABJRU5ErkJggg==" />
+                            <img class="icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA0tJREFUWEfdWE1O20AU/p6dTValJygs41SqSQ5QbtByAuAEpMsKRw1KUJeEEzQ5QXODpgeIcaUSloQTNGzoBvtV48TBHo/tsWkl1NnOm/e++d7vDOGZLXpmePB/APppn9mGwQcg2AxsEWALphnwCFiC4QUBjV97J15ZD5Ri6KrV7wE4JqItHUPMvDRgDBvuyamOvJDRAjRv99+D6RyEbV3FCTnGAsQfrFl3UnS+EJBghYg+FSnS2SemXhFbuYDm7cEIwIGOMVmGmU8NGAsG90B4Fe0zY9R0naMsnZmAns4M7wsX3di9rXuzNiLg3SMoPm26XRGPqaUEFMYM6GsVZsJsY/7RdLth5kUrzfYKsGxDDag1WMRp1gEmXCTkhJsa7olwdWpdtQeTDVOMheU6O4WAqrrKmjmFCSLc99uoedFlxSVk16WUzNuDJYAXOqzEZO6smaNVm65bZ4dM/GXt2mXT7b6M20oACiuwyZclwQjxsTVzDnXPzWMhEfi0G6/oCUDzVn8IouO14jEz20T0psDQuO4/dHa8nmBWayXsMF9YbrcTHZQBTUH0drXJ+3Xfn94b5jQLlE7cqBAmspj5u+V295SArlp9LzJOvrnT8D4uwjqSAaoqoGv78zab/k14bcBrzpxdNUPtAUcbcWNZoKoCEjbmGbaSLssQEgpUoKoCCtPfrP1SXT4BSOWyeAzIikSzzIziwBgLl6v2r+3+Hpv0bZ36iaqeG9Sq0h6nujil1O1h3hp0QDhf5U5OUOelY2S8DCA5YDc64uUlL+0ThTGj18TdWswQIMfZOhZvoqkztzCuo3/TOojpSG6UeWVABVAGJPXKVMtJ9bLEAcaiHjzsylW4LCiAJ+TjAqgtAuPhMmJHq7mGLCXGD55Ys+6+fPvyoMI5abl5IDBuLddJzehaA1rW2FkF1OPFSgxo4lB6LuJJ3fePZPdVmZ9UrlK2Dtkt8tgZvrOIOo2ZM45kKwDKHVUKpzyVwTAWQCMOMCUTIr60XiZ5zGgx9FgMw4fisOycvWGccQvizl95KMbduGZLDFO6I+4dMw+znjyqulXoMtWh1WdDIEbW1WfDeqoUz5/wswHis8EY/fPPBp1W8VSZSgw91Wje+WcH6A+tkMU0qNk3ygAAAABJRU5ErkJggg==" />
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h5>Mikel kavi</h5>
+                        product Designer <span> @colorlib</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <figure class="celebration-of-design">
+                <img src="./images/c88a68a4-63ea-421e-947e-6c1bb5a261fc.jpg">
+                <figcaption>
+                    <h6>A CITYWIDE <span>CELEBRATION OF DESIGN</span></h6>
+                    <p>Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis repellendus mollitia, explicabo,
+                        maiores quisquam numquam quia reiciendis sit, accusantium atque ex animi perspiciatis ab odit
+                        earum assumenda aliquid santium atque ex animi.</p>
+                    <p>Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis repellendus mollitia, explicabo,
+                        maiores quisquam numquam quia reiciendis sit, accusantium atque ex animi perspiciatis ab odit
+                        earum assumenda aliquid santium atque ex animi.</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="schedule">
+                <h7>SCHEDULE</h7>
+            </div>
+            <div class="schedule-tabel">
+                <nav class="main-header">
+                    <h3 class="schedule-17th">17th Aug</h3>
+                    <h3 class="schedule-18-19th">48th Aug</h3>
+                    <h3 class="schedule-18-19th">19th Aug</h3>
+                </nav>
+                <section class="schedule-Specifications">
+                    <div class="box-iteam">
+                        <div>
+                            <p class="paragraf-iteam">Registration And Breakfast</p>
+                            <p class="paragraf-iteam2">- Mal Practice</p>
+                        </div>
+                        <time class="time-box-iteam">8:30 am</time>
+                    </div>
+                    <div class="box-iteam">
+                        <div>
+                            <p class="paragraf-iteam">Opening Remarks And Keynote</p>
+                            <p class="paragraf-iteam2">- Aaon Ottix</p>
+                        </div>
+                        <time class="time-box-iteam">10:00 am</time>
+                    </div>
+                    <div class="box-iteam">
+                        <div>
+                            <p class="paragraf-iteam">Web Accessible Designs</p>
+                            <p class="paragraf-iteam2">- Frank Senbeans</p>
+                        </div>
+                        <time class="time-box-iteam">11:30 am</time>
+                    </div>
+                    <div class="box-iteam">
+                        <div>
+                            <p class="paragraf-iteam">Building Communities</p>
+                            <p class="paragraf-iteam2">- Ken Tucky</p>
+                        </div>
+                        <time class="time-box-iteam">12:30 am</time>
+                    </div>
+                </section>
+        </section>
+        <section class="schedule-picture">
+            <figure class="figure-person">
+                <div class="box-schedule-person">
+                    <img class="schedule-person" src="./images/efd2d072-f6c5-43cf-be9d-46d53178f12a.jpg">
+                </div>
+                <figcaption>
+                    <h5>WHEN CORNERS COLLIDE: DECODING THE CONTRASTING AESTHETICS</h5>
+                    product Designer
+                </figcaption>
+            </figure>
+            <figure class="figure-person">
+                <div class="box-schedule-person">
+                    <img class="schedule-person" src="./images/3f9ed842-da62-4e9d-a0c2-b057bcde9e83.jpg">
+                </div>
+                <figcaption>
+                    <h5>WHEN CORNERS COLLIDE: DECODING THE CONTRASTING AESTHETICS</h5>
+                    product Designer
+                </figcaption>
+            </figure>
+            <figure class="figure-person">
+                <div class="box-schedule-person">
+                    <img class="schedule-person" src="./images/4d5c46aa-0100-4f6c-b89d-5af89dc045e7.jpg">
+                </div>
+                <figcaption>
+                    <h5>WHEN CORNERS COLLIDE: DECODING THE CONTRASTING AESTHETICS</h5>
+                    product Designer
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <main class="map">
+        <iframe class="map-img"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12098.01196389003!2d-73.98902446128051!3d40.70694244403923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z2YbbjNmI24zZiNix2qnYjCDYp9uM2KfZhNiqINmG24zZiNuM2YjYsdqp2Iwg2KfbjNin2YTYp9iqINmF2KrYrdiv2Ycg2KLZhdix24zaqdin!5e0!3m2!1sfa!2s!4v1689869035470!5m2!1sfa!2s"></iframe>
+    </main>
+    <main class="aftermap ,cantiner1">
+        <h4 class="titel-brands">SCHEDULE</h4>
+        <div class="schedule-brands">
+            <img src="./images/06117e69-01fb-41c6-a1ce-499efd41f299.jpg">
+            <img src="./images/c35728b1-ee4f-447d-b2e8-1d88fc038ec5.jpg">
+            <img src="./images/ecbe6ca4-0f1c-413d-87a3-cf7157a5e00f.jpg">
+            <img src="./images/fb07251b-ee53-4666-8b39-3fdd12a0bbf4.jpg">
+        </div>
+
+    </main>
+    <footer class="cantiner1">
+        <section class="footer">
+            <div>
+                <img src="./images/logo.png_11zon.jpg">
+                <p class="paragraf-footer">Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum.
+                    Explicabo, maiores quisquam numquam quia reiciendis sit, accus antium atque ex animi perspiciatis ab
+                    odit earum assumenda aliquid santium.</p>
+                <img class="footer-icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArFJREFUWEftlz9200AQxr9ZqoQC0+XZRcIJcLrIDeYGsi+Q5AQxJ8A5AeYGzgUk3QDTyO6wb2AK6aWUC5IqOzwpMcjSrnclpcjjoVK7mv3Nt/NPhBf20Avjwb8B1Om5XbA4B7jLhBaBuqnSDF4SIwFoCZI3URgsq96AtUKtrts6PBRXBB4B1LI7iBMGTeLQu7bbD7srazuuC9AXIjqxNZzfx8xrgD/F8yAwfW9UqOMMJiC6MhmyWWdgbFJrL1DbGUyJ6NzmMNs9DEzj0LvU7dcCNVOGVwC91x3KwHUcemPVuhIojRki4dt6DcaGCRMp5fR2Eazz3+lsMcuBKqZKQFk2HdAP6wBmbECyr0vxozO3/0qIb0Xn0kCP5/674vsSULs3HBPw2Vodicto4U11+3VAj3WrfHUloI4zTEB4YwsUhZ7y2o/O3BMQHRO4K0hM1PY4iUL/bX5tx9g+b5QGmb9Hc7+fX0tBhCB/W73NjsnT/HXvAFXOLAVQ5Stn/hrN/dEWvAg0A9EHs1dPOxRAHWfQyMYuUG+w3Fc/SqDPAJQ25Dj0T9UK9YZsrU6WJuUYqqwQgHxiFBQyACkATA7YxKUWqO0M10Q41h5SD8gQU7yKQj+bp9KnWlDXAKrqZLW0rwHUMcXlvrQ3F0ZOwMiPpat8DUklz2IGyDp9frzVhcGDlB9vF8FMeWWPBiu0jqZZxthEc29nHG7WXBsCWTXXdPx4fSDWVg22CRBj8+teniTLINE21+2C9YDWAMh6QNtC2RS02pW6kFlGhf4qZRjyayjEzDfx3L/QZV2z36CqQHuU0aa9ijyrTySCUqDbAjE2DyzdfL2prdD2w6df6REYF3/6nQGIGT9BmN7dyUkxmxoDFcbUvhCiT8wtVaVmokRKObNRpAhmjCHTePHc6/+BTIr+BnJtkzQOhrOGAAAAAElFTkSuQmCC" />
+                <img class="footer-icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAbhJREFUWEftl99RwkAQxr9jeHczhnc60A7ECrQEO4AOxAqIJViBWoGkA0vAZzLD57sQZ5HLhPDnEiA3jJN7YULu9n777d7uxeDMhjkzHjRArog0Cv0vhWYiAuDKejUHugbourzMv28B4/xzQMb71m/NoanI0AB9AApUx5gYILokn4vGN4ASkTcAd3VQbLH5EpIP+f/XgKYiPQN8eIJZbpMCtx0yC2sRSEP16BnoqUMO7Z5FoLEBbjwDxR2ydxKgFIiPdUBt7ARKRAjgoqxCIWkSEU3KqMq6gn2GZLBVoUQkLQuj8xRIf7Ve/QCDQ/PP2lFbazl0KJB1YibSnf+pVals1AZkwbR8aBhNrsrvU94X0MgA12VSoDagVchGAO7LgNg5JwfSpF4A/RQYHNL/Tgq0OvZa3SvdAnIKfoVktvbYSq09KKuyVcJk5+4tjFOR82odiYjWEL0HeRspsLu5JiJ6Ol690biuHwriOWzvIblWIjZujLm+pEe4dKOtqOp3CkRtIApIbejZcH6XrdrAcoEBtPuWqr52hxbABfBpn9vAJCAnuxxwAlX0/OjpDZBLwkahRiGXAq73vzzgoiUKMH3SAAAAAElFTkSuQmCC" />
+                <img class="footer-icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdhJREFUWEftmE9u2kAYxd+bRpWyCptWZscNwg3i3CA9QYkC2zg+QegJXHdZXMER0hMkvQE3KFlhdUVW7YZ5kUlJjFswMrVMJc/OGn/z/ebN92dsYs8G94wHNVDeifxVobdBdGYMj/OMd5vX5Jd99XXmn8/S6/wB5ARfOjQa7uZsO+u5xbsffvdmM1A46BO83m7J3d4S9CH2ev3/G0jSA8mRrG5oeCapQ/JoN22erIsqFE697tUSoBlGHwF4lQHJ6jT2e3dLACcYuDS8rQwIlD+97CWqLEbz0+AKYlAdkDCzRJ80Y8m2jdAH0agO6F94XrNGoaAW9A3AcwwBcAmeLLPkxRdbBN4LuAc0spZjAzZo1F6XmUWBVoqXkyqcU6/7XOmTYIdhJ/a6nawgjWDYODTzZFMr7ahkoGEr9s8n607YCYYtmvn39HypQGlHiSLZprnI0DAap1UqHehN8Ll9QHO7yEJp/FMHp2kwJ4xGSZwt4UsHyiqQ7ebp+CvcOrK7WBfUv49Em2KkBmqGUa0Q6hjKy4TqFRLuQL40V8kl4T7VEWYu6Fp51gbbwnWoxNtH4Tt1aUzbtY59+1BMOvVrzF1j1C5NmmRhayaxfzHK+qj/fuSpXiuUp9AjDz7nNHK8mbEAAAAASUVORK5CYII=" />
+                <img class="footer-icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAqlJREFUWEftl01SE0EUgL83aFmspHdWKSScgLAj2QgnEE5AOIF4AuMJDCeAGxBPYNhk2DlHyEStcjdhQ8oqmWd1nMGETDJNzYRiQW+7+72v31+/JzyyJY+MhyegPI84W+h1I6p5UBGo5Qmd3FcIYgh/9kzgci8XaKMeHYvwEVhzEbjgzFCV1sA3J4vkzAWq1qI1XeUcYbcgyPR1pSsjDvqBGWbJnQtUqUddhLelwqTClG7omz1noMRNn5cCkwiNY46+X5qzuzoyLVSpR32EShlAVjHC0IPjKYsr/dA3m7lANpuewbcyYBS+DHpm38par0f7nnA+KfcPbN/NvhkLvdmJdlc8vuYCqV4pchYrnR+XpvtqJ6o+F2oCu4I2EXkJBGHPbFtZWWFwE7Nn707qmgHaaEQtYZzmc5d9uXdNc16mWLgXHh1gC6UP2BCYyVaFT4OeaRUCmnSDFWRdvALvUIY3wsWkCyqNyBbDrXkvKw6keiUjqVrLJHXqFGEcI7dL6ciII3smLx4LA6lyMvDN8TgmGlFHrGWyltIJfXOQxE5bhPfZxwq6LA3CvJdb5WkGre9ETc/jdClAco2xrnApnKp8GPimvQi+sMvuA5RW4qUCPTqXuQb11Ll6tLygBoZyzWaa9vEqVtnhVNYrJ96I1oOkfaL49jtIC6MX/+siY4/gYQvjf1MEv2MOfl0a+y3MrCSQbaovbHedssz5cwXbkp6p0LU9s6VaidnCfrDCuHjmLafP1aXo5Sly3XdqP6ywMhu0uXBKGPqmenc/s2PMaqZcX+16Lq3kTkCJlZbZ5F+EvsmcZvLGoE7pk4dyISP27z0GpaYcuw/ahZt+JVRo2w93kVtzJ9f0ss0+iVnzvPsNjqoEsdAvbZR2DdKyzjlbqCyFeXKegPIs9BcvnIA0bnnWUQAAAABJRU5ErkJggg==" />
+            </div>
+            <div>
+                <h3 class="Contact-Us">Contact Us</h3>
+                <p class="paragraf-contact-us">3968 Carson Street, San Diego, CA92101</p>
+                <p class="paragraf-contact-us">info@evento.com</p>
+                <p class="number-contact-us">10 (85) 980 3673</p>
+            </div>
+            <div>
+                <h3 class="subscribe">Subscribe Newsletter</h3>
+                <p class="paragraf-subscribe">raising a heavy fur muff that covered the whole of her lower arm towards
+                    the viewer.</p>
+                <input class="email" type="email" placeholder="Enter your email">
+                <button class="botton-subscribe">SUBSCRIBE</button>
+            </div>
+        </section>
+        <section class="footer-site">
+            <p class="paragraf-footer-site">Copyright ©2023 All rights reserved | This template is made with</p>
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQ9JREFUSEvFle1xgkAURc8zDViCHZhUEB0swA4SKkgtqcCkAwqQUTvQDizBBpLN8BYni7AsCJu8f3CHe3hfu0LkkMj+/A/AbFkDLwiPmqHhDLzLikwfrf6GMCv1I/B51d2qVDIwO6Z8sUHUoB6Gvb4UFh4944FUllyuehWQU/zJfFBfDEdZ8VQDmJxXYDPI/PfjVBI+bLJlmFzTfx4JcJDEltEFmJHMbZsS6/2ngOglittkXaAxxhROkpQL6vZAAcWifes03bsLJyYsvIs2EFIzr0yRO6J3ZNJo7gX0zMRr3groCGk1DwICkKB5J4AH0sm8M+AGwu0otp1hva5Mna5ieZwLJXRA9gKEzJr06IAf4NhmGf4Rst0AAAAASUVORK5CYII=" />
+            <p class="paragraf-footer-site">by</p>
+            <span>colorlib</span>
+        </section>
+    </footer>
+</body>
+
+</html>
